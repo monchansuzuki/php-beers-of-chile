@@ -1,0 +1,208 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+	background-color: #aaa;
+	background: -moz-linear-gradient(top, #eee,  #aaa);
+	background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#aaa));
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+
+.roundedbox {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+header {
+    margin:20px;
+    padding:20px;
+    background-color: #fffbf4;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+    min-height: 400px;
+    border: 1px solid #38378e;
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    background: #a2bdda;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a2bdda), to(#8196ae));
+    background: -moz-linear-gradient(top, #a2bdda, #8196ae);
+}
+
+ul.menu {
+}
+
+ul.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul.menu li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20pt;
+    color: #000;
+}
+
+ul.menu li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20pt;
+    color: #9f0c17;
+    background-color: #fffbf4;
+}
+
+div[data-pageid="Accueil"] main p {
+    font-size: 25pt;
+}
+
+div[data-pageid="Accueil"] main p span.nom_librairie {
+    font-family: 'Miss Fajardose', cursive;
+    font-size: 10rem;
+    margin-left: 25px;
+    text-shadow: 3px 3px 3px rgba(0,0,0, .5);
+    /*
+    -moz-box-shadow: 0 3px 2px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    */
+}
+
+/*
+Page catalogue des gravures de conte
+*/
+ul#catalog_items {
+    padding:10px;
+    min-width:800px;
+    margin:0 auto;
+}
+
+ul#catalog_items img {
+    width : 100%;
+}
+
+ul#catalog_items p {
+    width : 140px;
+    height: 3em;
+    text-align: center;
+}
+
+ul#catalog_items li{
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    width : calc(100% / 4 - 20px);
+}
+
+ul#catalog_items li:not(:first-of-type){
+    margin-left: 20px;
+}
+
+/* Formulaire de la page contact */
+form[name="contact_form"] {
+    padding: 20px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+form[name="contact_form"] div.form-line {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+/* Ligne du bouton submit */
+form[name="contact_form"] div.form-line:last-of-type {
+    text-align: center;
+}
+
+form[name="contact_form"] div.form-line label {
+    display: inline-block;
+    width: calc(15% - 10px);
+    text-align: right;
+    margin-right: 10px;
+}
+
+form[name="contact_form"] div.form-line fieldset {
+    padding: 15px;
+    /*border-style: none  ;*/
+}
+
+form[name="contact_form"] div.form-line fieldset legend {
+    /*text-align: right;*/
+    /*width: calc(15% - 10px);*/
+    margin-left: 10px;
+
+}
+
+form[name="contact_form"] div.form-line fieldset label {
+    width: auto;
+    margin-left: 5px;
+    font-size: smaller;
+}
+
+form[name="contact_form"] div.form-line fieldset input[type="radio"] {
+    width: auto;
+    margin-left: 8px;
+}
+
+form[name="contact_form"] div.form-line fieldset input[type="radio"]:first-of-type {
+    margin-left: calc(15% - 10px);
+}
+
+/* Les champs de saisie (radio exclus) */
+form[name="contact_form"] div.form-line input[type="text"],
+form[name="contact_form"] div.form-line input[type="submit"] {
+    display: inline-block;
+    width: 85%;
+    color: #e8f0de;
+    border: solid 1px #e27224;
+    cursor: pointer;
+    padding: 5px 20px;
+    background: #ee8909;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 5px;
+}
+
+form[name="contact_form"] div.form-line input[type="submit"] {
+    width: auto;
+}
+
+/* Le paragraphe de retour des messages d'erreur */
+form[name="contact_form"] p {
+    padding: 10px;
+    text-align: center;
+}
+
+
+form[name="contact_form"] div.form-line input[type="text"]:focus {
+    border-color: #000;
+}
+
+form[name="contact_form"] div.form-line input[type="text"]:hover {
+    background: #ee8909;
+}
+
+form[name="contact_form"] div.form-line input[type="submit"] {
+    margin-top: 20px;
+    margin-left : auto;
+    margin-right : auto;
+}
+
+form[name="contact_form"] span.error_case {
+    margin-left: 3em;
+    color : #9f0c17;
+    font-size: smaller;
+}
